@@ -1,9 +1,8 @@
 ---
-- hosts: localhost
+- hosts: database
   gather_facts: yes
 
-
   tasks:
-    - name: print out a group variable
+    - name: print out group variables
       debug:
         msg: "{{ mysql_port }} and {{ mysql_password }}"
